@@ -1,6 +1,0 @@
-/app /app.html 200
-/dashboard /app.html 200
-/login /login.html 200
-/cadastro /cadastro.html 200
-/register /cadastro.html 200
-/* /404.html 404

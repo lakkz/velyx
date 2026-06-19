@@ -1,0 +1,51 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Velyx icon</title>
+  <desc id="desc">Geometric V icon with upward progression elements for the Velyx brand.</desc>
+  <defs>
+    <linearGradient id="velyxGradient" x1="217" y1="311" x2="746" y2="793" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1B5E"/>
+      <stop offset="0.35" stop-color="#2563EB"/>
+      <stop offset="0.72" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#00D4FF"/>
+    </linearGradient>
+    <linearGradient id="velyxDark" x1="216" y1="282" x2="445" y2="787" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.45" stop-color="#0B1B5E"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="velyxGlow" x1="470" y1="252" x2="720" y2="678" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00D4FF"/>
+      <stop offset="0.55" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <filter id="softShadow" x="130" y="180" width="760" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#111827" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="140" fill="transparent"/>
+
+  <g filter="url(#softShadow)">
+    <!-- Left outer arm -->
+    <path d="M176 302H328L512 660L420 780L176 302Z" fill="url(#velyxDark)"/>
+
+    <!-- Left blue facet -->
+    <path d="M292 398L398 594L450 512L362 340L176 302L292 398Z" fill="#0B57D0" opacity="0.92"/>
+
+    <!-- Main right rising arm -->
+    <path d="M512 660L646 410L746 386L420 780L512 660Z" fill="url(#velyxGradient)"/>
+
+    <!-- Upper right shard -->
+    <path d="M566 356L708 335L664 417L522 438L566 356Z" fill="url(#velyxGlow)"/>
+
+    <!-- Top progression shards -->
+    <path d="M626 261L724 230L694 291L596 322L626 261Z" fill="url(#velyxGlow)"/>
+    <path d="M650 194L746 154L710 219L614 259L650 194Z" fill="url(#velyxGlow)"/>
+
+    <!-- Inner V cut -->
+    <path d="M292 398L421 630L548 432L646 410L420 780L216 380L292 398Z" fill="#F8FAFC" opacity="0.96"/>
+
+    <!-- Rebuild inner colored edge -->
+    <path d="M356 432L424 560L512 424L578 414L420 675L292 420L356 432Z" fill="url(#velyxGradient)"/>
+  </g>
+</svg>

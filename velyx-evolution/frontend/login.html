@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Velyx</title>
+  <meta name="description" content="Entre na Velyx para acessar seu painel financeiro.">
+  <link rel="icon" href="assets/brand/velyx-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-brand">
+      <a class="brand" href="index.html" aria-label="Velyx">
+        <img class="brand-icon" src="assets/brand/velyx-icon.svg" alt="" aria-hidden="true">
+        <img class="brand-wordmark" src="assets/brand/velyx-wordmark.png" alt="" aria-hidden="true">
+      </a>
+      <div>
+        <p class="eyebrow">Acesso</p>
+        <h1>Entre para acompanhar suas finanças.</h1>
+        <p>Consulte saldo, transações, metas financeiras e relatórios mensais em um painel simples.</p>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="panel-heading">
+        <p class="eyebrow">Login</p>
+        <h2>Acessar conta</h2>
+        <p>Use seu e-mail e senha cadastrados neste navegador.</p>
+      </div>
+
+      <form data-login-form>
+        <label>
+          <span>E-mail</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span>Senha</span>
+          <input type="password" name="password" autocomplete="current-password" required>
+        </label>
+        <button class="button button-primary" type="submit">Entrar</button>
+      </form>
+
+      <p class="auth-switch">Ainda não tem conta? <a href="cadastro.html">Criar conta</a></p>
+    </section>
+  </main>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script src="scripts/storage.js"></script>
+  <script src="scripts/login.js"></script>
+</body>
+</html>

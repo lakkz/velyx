@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | Velyx</title>
+  <meta name="description" content="Crie sua conta Velyx para organizar receitas, gastos e metas financeiras.">
+  <link rel="icon" href="assets/brand/velyx-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-brand">
+      <a class="brand" href="index.html" aria-label="Velyx">
+        <img class="brand-icon" src="assets/brand/velyx-icon.svg" alt="" aria-hidden="true">
+        <img class="brand-wordmark" src="assets/brand/velyx-wordmark.png" alt="" aria-hidden="true">
+      </a>
+      <div>
+        <p class="eyebrow">Conta gratuita</p>
+        <h1>Comece a controlar seu dinheiro com clareza.</h1>
+        <p>Registre receitas, gastos e economias, acompanhe metas e gere relatórios mensais quando precisar.</p>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="panel-heading">
+        <p class="eyebrow">Cadastro</p>
+        <h2>Criar conta</h2>
+        <p>Seus dados ficam salvos localmente neste navegador.</p>
+      </div>
+
+      <form data-register-form>
+        <label>
+          <span>Nome</span>
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>
+          <span>E-mail</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span>Senha</span>
+          <input type="password" name="password" autocomplete="new-password" minlength="6" required>
+        </label>
+        <button class="button button-primary" type="submit">Criar conta</button>
+      </form>
+
+      <p class="auth-switch">Já tem conta? <a href="login.html">Entrar</a></p>
+    </section>
+  </main>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script src="scripts/storage.js"></script>
+  <script src="scripts/register.js"></script>
+</body>
+</html>

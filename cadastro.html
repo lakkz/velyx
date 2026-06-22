@@ -27,6 +27,7 @@
         <p class="eyebrow">Cadastro</p>
         <h2>Criar conta</h2>
         <p>Seus dados ficam salvos localmente neste navegador.</p>
+        <p class="auth-note">Para usar dados de outro aparelho, importe um backup em vez de criar outra conta.</p>
       </div>
 
       <form data-register-form>
@@ -46,6 +47,11 @@
       </form>
 
       <p class="auth-switch">Já tem conta? <a href="login.html">Entrar</a></p>
+      <div class="dev-tools" aria-label="Ferramentas de dados locais">
+        <button class="button button-secondary" type="button" data-import-backup-button>Importar backup</button>
+        <button class="button button-secondary dev-clear-button" type="button" data-clear-local>Limpar dados locais</button>
+        <input type="file" accept="application/json" data-import-backup hidden>
+      </div>
     </section>
   </main>
 
